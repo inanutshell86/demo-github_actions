@@ -1,0 +1,59 @@
+name: Run E2E Tests on Push
+
+on:
+  push:
+    branches:
+      - 'master'
+  schedule:
+    - '0 2 * * 0-6'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 12.x ]
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies for tests
+        run: npm ci
+
+      - name: Set workdir to browsers.json as mount
+        run: make workdir
+
+      - name: Set up Selenoid Infrastructure
+        run: make setup
+
+      - name: Run UI-Automation tests with Chrome browser
+        env:
+          SELENOID: '127.0.0.1'
+        run: npm test
+
+      - name: Shutdown Selenoid Infrastructure
+        run: make stop
+
+      - name: Generate allure report
+        if: always()
+        run: npm run report-ci
+        continue-on-error: true
+
+      - name: Deploy Allure Report
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./allure-report
+
+      - name: Upload Allure Report
+        uses: actions/upload-artifact@v2
+        with:
+         name: allure report
+         path: ./allure-report

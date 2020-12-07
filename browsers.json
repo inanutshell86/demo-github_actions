@@ -1,0 +1,18 @@
+{
+  "chrome": {
+    "default": "87.0",
+    "versions": {
+      "87.0": {
+        "image": "selenoid/vnc:chrome_87.0",
+        "port": "4444",
+        "path": "/",
+        "tmpfs": {
+          "/tmp": "size=512m"
+        },
+        "volumes": [
+          "mount/src/resources:/home/uploads"
+        ]
+      }
+    }
+  }
+}
