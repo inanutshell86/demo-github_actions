@@ -1,0 +1,11 @@
+[ {
+  "uid" : "83c04c401f42a7b0",
+  "name" : "User should be able to add RSI study panel with a hot pink ma @smoke",
+  "time" : {
+    "start" : 1607364307394,
+    "stop" : 1607364317603,
+    "duration" : 10209
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
