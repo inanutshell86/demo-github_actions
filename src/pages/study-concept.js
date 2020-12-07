@@ -94,7 +94,8 @@ export class StudyConceptPage extends BasePage {
 	@step('Check that study deleted')
 	async checkStudyDeleted(name) {
 		let studyName = await $(`//div[@class='stx-panel-legend']//cq-label[contains(.,'${name.toLowerCase()}')]`);
-		await expect(studyName).not.toBePresent();
+		// brake for debugging purposes
+		await expect(studyName).toBePresent();
 	}
 }
 
