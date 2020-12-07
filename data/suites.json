@@ -4,13 +4,13 @@
     "name" : "Studies concept spec",
     "children" : [ {
       "name" : "User should be able to add RSI study panel with a hot pink ma @smoke",
-      "uid" : "83c04c401f42a7b0",
+      "uid" : "7c9764bb75a591d6",
       "parentUid" : "ec5e31657d528421ad35435d0917e3ed",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1607364307394,
-        "stop" : 1607364317603,
-        "duration" : 10209
+        "start" : 1607364622539,
+        "stop" : 1607364642427,
+        "duration" : 19888
       },
       "flaky" : false,
       "newFailed" : false,

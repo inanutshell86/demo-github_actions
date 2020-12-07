@@ -4,10 +4,10 @@
     "uid" : "ec5e31657d528421ad35435d0917e3ed",
     "name" : "Studies concept spec",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

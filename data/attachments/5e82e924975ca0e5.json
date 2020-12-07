@@ -1,0 +1,12 @@
+{
+  "url": "https://demo.chartiq.com/",
+  "severLogs": [
+    {
+      "level": "SEVERE",
+      "message": "https://demo.chartiq.com/favicon.ico - Failed to load resource: the server responded with a status of 403 ()",
+      "source": "network",
+      "timestamp": 1607364624724
+    }
+  ],
+  "warningLogs": []
+}

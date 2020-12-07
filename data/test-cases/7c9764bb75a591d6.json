@@ -1,27 +1,31 @@
 {
-  "uid" : "83c04c401f42a7b0",
+  "uid" : "7c9764bb75a591d6",
   "name" : "User should be able to add RSI study panel with a hot pink ma @smoke",
   "fullName" : "Studies concept spec.User should be able to add RSI study panel with a hot pink ma @smoke",
   "historyId" : "2f9377a8c6f03613147b5008f145d1c9",
   "time" : {
-    "start" : 1607364307394,
-    "stop" : 1607364317603,
-    "duration" : 10209
+    "start" : 1607364622539,
+    "stop" : 1607364642427,
+    "duration" : 19888
   },
   "description" : "",
   "descriptionHtml" : "",
-  "status" : "passed",
+  "status" : "failed",
+  "statusMessage" : "Expect $(`//div[@class='stx-panel-legend']//cq-label[contains(.,'rsi')]`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+  "statusTrace" : "Error: Expect $(`//div[@class='stx-panel-legend']//cq-label[contains(.,'rsi')]`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"\n                    at StudyConceptPage.checkStudyDeleted (/home/runner/work/demo-github_actions/demo-github_actions/src/pages/study-concept.js:98:27)\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n                    at Context.<anonymous> (/home/runner/work/demo-github_actions/demo-github_actions/test/specs/e2e/studies-concept.spec.js:36:3)\n                    at Context.executeAsync (/home/runner/work/demo-github_actions/demo-github_actions/node_modules/@wdio/utils/build/shim.js:96:16)\n                    at Context.exports.testFrameworkFnWrapper (/home/runner/work/demo-github_actions/demo-github_actions/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:25:18)",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
-    "status" : "passed",
+    "status" : "failed",
+    "statusMessage" : "Expect $(`//div[@class='stx-panel-legend']//cq-label[contains(.,'rsi')]`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+    "statusTrace" : "Error: Expect $(`//div[@class='stx-panel-legend']//cq-label[contains(.,'rsi')]`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"\n                    at StudyConceptPage.checkStudyDeleted (/home/runner/work/demo-github_actions/demo-github_actions/src/pages/study-concept.js:98:27)\n                    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n                    at Context.<anonymous> (/home/runner/work/demo-github_actions/demo-github_actions/test/specs/e2e/studies-concept.spec.js:36:3)\n                    at Context.executeAsync (/home/runner/work/demo-github_actions/demo-github_actions/node_modules/@wdio/utils/build/shim.js:96:16)\n                    at Context.exports.testFrameworkFnWrapper (/home/runner/work/demo-github_actions/demo-github_actions/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:25:18)",
     "steps" : [ {
       "name" : "\"before each\" hook for Studies concept spec",
       "time" : {
-        "start" : 1607364307394,
-        "stop" : 1607364307395,
-        "duration" : 1
+        "start" : 1607364622540,
+        "stop" : 1607364622540,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,9 +38,9 @@
     }, {
       "name" : "Open Main Page",
       "time" : {
-        "start" : 1607364307519,
-        "stop" : 1607364309945,
-        "duration" : 2426
+        "start" : 1607364622650,
+        "stop" : 1607364624656,
+        "duration" : 2006
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,9 +53,9 @@
     }, {
       "name" : "Search for symbol",
       "time" : {
-        "start" : 1607364309945,
-        "stop" : 1607364310185,
-        "duration" : 240
+        "start" : 1607364624656,
+        "stop" : 1607364624884,
+        "duration" : 228
       },
       "status" : "passed",
       "steps" : [ ],
@@ -64,9 +68,9 @@
     }, {
       "name" : "Select new symbol",
       "time" : {
-        "start" : 1607364310185,
-        "stop" : 1607364310895,
-        "duration" : 710
+        "start" : 1607364624884,
+        "stop" : 1607364625607,
+        "duration" : 723
       },
       "status" : "passed",
       "steps" : [ ],
@@ -79,9 +83,9 @@
     }, {
       "name" : "Check current symbol",
       "time" : {
-        "start" : 1607364310895,
-        "stop" : 1607364311146,
-        "duration" : 251
+        "start" : 1607364625607,
+        "stop" : 1607364625859,
+        "duration" : 252
       },
       "status" : "passed",
       "steps" : [ ],
@@ -94,9 +98,9 @@
     }, {
       "name" : "Open Studies List",
       "time" : {
-        "start" : 1607364311146,
-        "stop" : 1607364311791,
-        "duration" : 645
+        "start" : 1607364625859,
+        "stop" : 1607364626461,
+        "duration" : 602
       },
       "status" : "passed",
       "steps" : [ ],
@@ -109,9 +113,9 @@
     }, {
       "name" : "Search for study",
       "time" : {
-        "start" : 1607364311791,
-        "stop" : 1607364312021,
-        "duration" : 230
+        "start" : 1607364626461,
+        "stop" : 1607364626669,
+        "duration" : 208
       },
       "status" : "passed",
       "steps" : [ ],
@@ -124,9 +128,9 @@
     }, {
       "name" : "Add needed study",
       "time" : {
-        "start" : 1607364312021,
-        "stop" : 1607364312836,
-        "duration" : 815
+        "start" : 1607364626669,
+        "stop" : 1607364627449,
+        "duration" : 780
       },
       "status" : "passed",
       "steps" : [ ],
@@ -139,9 +143,9 @@
     }, {
       "name" : "Study should be added to dashboard",
       "time" : {
-        "start" : 1607364312836,
-        "stop" : 1607364312904,
-        "duration" : 68
+        "start" : 1607364627449,
+        "stop" : 1607364627499,
+        "duration" : 50
       },
       "status" : "passed",
       "steps" : [ ],
@@ -154,9 +158,9 @@
     }, {
       "name" : "Open Studies List",
       "time" : {
-        "start" : 1607364312904,
-        "stop" : 1607364313000,
-        "duration" : 96
+        "start" : 1607364627499,
+        "stop" : 1607364627572,
+        "duration" : 73
       },
       "status" : "passed",
       "steps" : [ ],
@@ -169,9 +173,9 @@
     }, {
       "name" : "Check study on list",
       "time" : {
-        "start" : 1607364313000,
-        "stop" : 1607364313031,
-        "duration" : 31
+        "start" : 1607364627572,
+        "stop" : 1607364627601,
+        "duration" : 29
       },
       "status" : "passed",
       "steps" : [ ],
@@ -184,9 +188,9 @@
     }, {
       "name" : "Search for study",
       "time" : {
-        "start" : 1607364313031,
-        "stop" : 1607364313379,
-        "duration" : 348
+        "start" : 1607364627601,
+        "stop" : 1607364627967,
+        "duration" : 366
       },
       "status" : "passed",
       "steps" : [ ],
@@ -199,9 +203,9 @@
     }, {
       "name" : "Add needed study",
       "time" : {
-        "start" : 1607364313379,
-        "stop" : 1607364314608,
-        "duration" : 1229
+        "start" : 1607364627967,
+        "stop" : 1607364629167,
+        "duration" : 1200
       },
       "status" : "passed",
       "steps" : [ ],
@@ -214,9 +218,9 @@
     }, {
       "name" : "Select field option for study",
       "time" : {
-        "start" : 1607364314608,
-        "stop" : 1607364314944,
-        "duration" : 336
+        "start" : 1607364629167,
+        "stop" : 1607364629450,
+        "duration" : 283
       },
       "status" : "passed",
       "steps" : [ ],
@@ -229,9 +233,9 @@
     }, {
       "name" : "Select color option for study",
       "time" : {
-        "start" : 1607364314944,
-        "stop" : 1607364315231,
-        "duration" : 287
+        "start" : 1607364629450,
+        "stop" : 1607364629774,
+        "duration" : 324
       },
       "status" : "passed",
       "steps" : [ ],
@@ -244,9 +248,9 @@
     }, {
       "name" : "Confirm study form",
       "time" : {
-        "start" : 1607364315231,
-        "stop" : 1607364315367,
-        "duration" : 136
+        "start" : 1607364629774,
+        "stop" : 1607364629871,
+        "duration" : 97
       },
       "status" : "passed",
       "steps" : [ ],
@@ -259,9 +263,9 @@
     }, {
       "name" : "Study should be added to dashboard",
       "time" : {
-        "start" : 1607364315367,
-        "stop" : 1607364315401,
-        "duration" : 34
+        "start" : 1607364629871,
+        "stop" : 1607364629920,
+        "duration" : 49
       },
       "status" : "passed",
       "steps" : [ ],
@@ -274,9 +278,9 @@
     }, {
       "name" : "Check study color",
       "time" : {
-        "start" : 1607364315401,
-        "stop" : 1607364315437,
-        "duration" : 36
+        "start" : 1607364629920,
+        "stop" : 1607364629953,
+        "duration" : 33
       },
       "status" : "passed",
       "steps" : [ ],
@@ -289,9 +293,9 @@
     }, {
       "name" : "Open Studies List",
       "time" : {
-        "start" : 1607364315437,
-        "stop" : 1607364316015,
-        "duration" : 578
+        "start" : 1607364629953,
+        "stop" : 1607364630534,
+        "duration" : 581
       },
       "status" : "passed",
       "steps" : [ ],
@@ -304,9 +308,9 @@
     }, {
       "name" : "Delete study",
       "time" : {
-        "start" : 1607364316015,
-        "stop" : 1607364316086,
-        "duration" : 71
+        "start" : 1607364630534,
+        "stop" : 1607364630603,
+        "duration" : 69
       },
       "status" : "passed",
       "steps" : [ ],
@@ -319,9 +323,9 @@
     }, {
       "name" : "Check that study deleted",
       "time" : {
-        "start" : 1607364316086,
-        "stop" : 1607364316186,
-        "duration" : 100
+        "start" : 1607364630603,
+        "stop" : 1607364640667,
+        "duration" : 10064
       },
       "status" : "passed",
       "steps" : [ ],
@@ -332,11 +336,29 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     } ],
-    "attachments" : [ ],
+    "attachments" : [ {
+      "uid" : "bb00f678b14e588f",
+      "name" : "Screenshot",
+      "source" : "bb00f678b14e588f.png",
+      "type" : "image/png",
+      "size" : 61000
+    }, {
+      "uid" : "8b8cbb6ecd4b786b",
+      "name" : "page.html",
+      "source" : "8b8cbb6ecd4b786b.html",
+      "type" : "text/html",
+      "size" : 149221
+    }, {
+      "uid" : "5e82e924975ca0e5",
+      "name" : "console-errors.json",
+      "source" : "5e82e924975ca0e5.json",
+      "type" : "application/json",
+      "size" : 309
+    } ],
     "parameters" : [ ],
     "stepsCount" : 21,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
@@ -378,9 +400,13 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "tags" : [ ]
   },
-  "source" : "83c04c401f42a7b0.json",
+  "source" : "7c9764bb75a591d6.json",
   "parameterValues" : [ "chrome-87.0.4280.66" ]
 }

@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Expect $(`//div[@class='stx-panel-legend']//cq-label[contains(.,'rsi')]`) to be present\n                \n                Expected: \"present\"\n                Received: \"not present\"",
+      "children" : [ {
+        "name" : "User should be able to add RSI study panel with a hot pink ma @smoke",
+        "uid" : "7c9764bb75a591d6",
+        "parentUid" : "a87e0faba434aaa5b5daf5ed232815bc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607364622539,
+          "stop" : 1607364642427,
+          "duration" : 19888
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-87.0.4280.66" ]
+      } ],
+      "uid" : "a87e0faba434aaa5b5daf5ed232815bc"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }
