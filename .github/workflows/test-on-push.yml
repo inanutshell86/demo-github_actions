@@ -3,7 +3,7 @@ name: Run E2E Tests on Push
 on:
   push:
     branches:
-      - 'master'
+      - main
 
 jobs:
   test:
